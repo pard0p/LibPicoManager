@@ -8,9 +8,6 @@ The library provides a structured abstraction over memory allocation and PICO or
 
 - **Unified Code Block**: Single shared RWX memory block containing all PICO code sections, reducing fragmentation and enabling coherent memory strategy for advanced techniques like sleep masking.
 - **Dynamic PICO Substitution**: Replace PICO modules at runtime (e.g., swap communication transport) without affecting the overall manager state or other loaded modules.
-- **Phased Loading**: Load PICOs in multiple phases (e.g., hooks first, then remaining modules), enabling dependency management and C2 communication patterns.
-- **Compacted Array Management**: Entries are compacted when removed, maintaining clean ID sequencing and reducing memory overhead.
-- **Dual Memory Architecture**: Shared RWX block for code with separate RW blocks for per-PICO data sections, enabling fine-grained memory protection and control.
 - **Flexible Lookup**: Retrieve PICO entries by numeric ID or by name, with support for export resolution by both identifiers.
 
 ## Use Cases
